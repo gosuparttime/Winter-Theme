@@ -1,0 +1,85 @@
+// Responsive Elements
+@media (max-width: @screen-md-max) {
+    #logo{
+        width: 50%;
+    }
+    #quote{
+        font-size: 2em;
+    }
+}
+@media (max-width: @screen-sm-max) {
+   #hero{
+       bottom: 40%;
+   }
+   #drifts{
+       top: 50%;
+   }
+   #logo{
+        width: 40%;
+    }
+    
+    #su-seal{
+        margin-top: 0;
+    }
+    .container{
+        width: 100%;
+    }
+    #inner-header ul#menu-utility-links{
+        padding-right: 9em;
+    }
+    #nav-wrap .navbar-fixed-top, #nav-page .navbar-fixed-top,{
+        top: 50px;
+        &.navbar-default{
+        background: transparent;
+       }
+    }
+    .navbar-toggle{
+        position: absolute;
+        right: 1em;
+        top: -40px;
+        z-index: 5;
+    }
+    #nav-wrap .navbar-default .navbar-nav, #nav-page .navbar-default .navbar-nav {
+        text-align: left;
+        float: none;
+        padding: 0;
+        margin: 0;
+        margin-top: .75em;
+        background: @blue-dark;
+        > li > a{
+            color: @white;
+            font-size: @font-size-h5;
+            &:hover,
+            &:focus {
+                background: @blue;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+   #hero{
+       bottom: 40%;
+   }
+   #drifts, #clumps{
+       background-image: url(../images/snowdrift-small.png);
+       padding-top: 90px;
+   }
+   #drifts{
+       top: 50%;
+   }
+   #logo{
+        bottom: 25%;
+        width: 50%;
+    }
+    #wrapper{
+        padding-top: 1em;
+    }
+    #sidebar2{
+        .flaked, .cover{
+            position: relative;
+            padding: 0;
+            text-align: left;
+        }
+    }
+}
